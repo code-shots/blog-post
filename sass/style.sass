@@ -1,0 +1,130 @@
+// VARIABLES
+$black: #121212
+$indicator-red: #F75A5D
+$category-blue: #4496CD
+
+// GLOBAL STYLES
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	color: $black
+
+body
+	height: 100vh
+	width: 100vw
+	display: flex
+	flex-direction: row
+
+.flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+// Sidebar
+.sidebar
+	height: 100%
+	width: 115px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding: 47px
+
+	nav
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		height: 360px
+
+		a
+			transform: rotate(-90deg)
+			text-decoration: none
+			font-family: "Avenir Next"
+			font-weight: 700
+			font-size: 13px
+			letter-spacing: 1px
+
+			&:nth-child(1)
+				margin-bottom: -15px
+
+			&:nth-child(5)
+				margin-top: -10px
+
+.hamburger
+	cursor: pointer
+
+.indicator
+	height: 22px
+	width: 22px
+	border-radius: 100px
+	background-color: $indicator-red
+
+// IMAGE
+.image
+	flex: 1
+	background-image: url(/img/portrait.jpg)
+	background-size: cover
+	background-position: center
+
+// ARTICLE
+.article
+	width: 767px
+	overflow-y: scroll
+
+.search
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	padding: 47px
+
+.headline-wrapper
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	height: 220px
+
+	h3
+		font-family: "Avenir Next"
+		font-weight: 700
+		font-size: 13px
+		color: $category-blue
+		letter-spacing: 1.5px
+
+	h1
+		font-family: "Playfair Display"
+		font-weight: 700
+		font-size: 38px
+		letter-spacing: 5.65px
+		text-align: center
+		line-height: 60px
+		width: 600px
+
+	h2
+		font-family: "Playfair Display"
+		font-size: 17px
+		letter-spacing: 1px
+		font-weight: normal
+
+.text-wrapper
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 0 76px 0 76px
+	margin-top: 50px
+
+	p
+		font-family: "Playfair Display"
+		font-size: 15px
+		line-height: 35px
+		margin-bottom: 25px
+
+		&:first-child
+			&:first-letter
+				  float: left
+				  font-size: 65px
+				  line-height: 60px
+				  padding-top: 5px
+				  padding-right: 12px
