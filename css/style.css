@@ -109,3 +109,6 @@ body {
       line-height: 60px;
       padding-top: 5px;
       padding-right: 12px; }
+
+.mobile-header {
+  display: none; }

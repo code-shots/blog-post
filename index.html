@@ -7,12 +7,23 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" media="only screen and (min-width: 50px) and (max-width: 800px)" href="/css/mobile.css">
 	<!-- SCRIPTS -->
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 	<script defer src="/js/function.js"></script>
 </head>
 <body>
+	<div class="mobile-header">
+		<div class="indicator"></div>
+
+		<div class="hamburger">
+			<svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M0 3V0h21.417v3H0zm0 7.417v-3h21.417v3H0zm0 7.417v-3h15.5v3H0z" fill="#121212" fill-rule="nonzero"/>
+			</svg>
+		</div>
+	</div>
+
 	<div class="sidebar">
 		<div class="hamburger">
 			<svg width="22" height="18" xmlns="http://www.w3.org/2000/svg">
